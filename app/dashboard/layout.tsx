@@ -8,7 +8,7 @@ function layout({
   }>) {
   return (
     <div>
-        <div className='md:w-64 hidden m:block fixed'>
+        <div className='md:w-64 md:hidden m:block fixed'>
           <SideNav />
         </div>
         <div className='md:ml-64'>
