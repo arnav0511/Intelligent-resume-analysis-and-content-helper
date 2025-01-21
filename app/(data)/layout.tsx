@@ -1,6 +1,5 @@
 import React from 'react'
-import SideNav from './_components/SideNav';
-
+import Navbar from '../_components/Navbar'
 function layout({
     children,
   }: Readonly<{
@@ -8,13 +7,10 @@ function layout({
   }>) {
   return (
     <div>
-        <div className='md:w-64 md:hidden m:block fixed'>
-          <SideNav />
-        </div>
-        <div className='md:ml-64'>
+        <div>
+          <Navbar />
           {children}
         </div>
-        
     </div>
   )
 }
