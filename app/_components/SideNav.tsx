@@ -1,6 +1,7 @@
 'use client'
 import React, { useState } from 'react';
 import Image from 'next/image';
+import Link from 'next/link';
 
 function SideNav() {
   const [isFeaturesVisible, setIsFeaturesVisible] = useState(true);
@@ -22,7 +23,7 @@ function SideNav() {
       </button>
 
       {/* Personal Info */}
-      <button className="text-lg font-bold p-2 rounded hover:bg-gray-200 w-full text-left border-b border-gray-300">
+      <button className="text-lg font-bold p-2 rounded hover:bg-gray-200 w-full text-left border-b border-gray-300 " >
         Personal Info
       </button>
 
@@ -38,9 +39,10 @@ function SideNav() {
 
         {isFeaturesVisible && (
           <div className="ml-4 space-y-2">
-            <button className="text-sm font-bold p-2 rounded hover:bg-gray-200 w-full text-left border-b border-gray-300">
+           <Link href="/dashboard/AI-Resume"> <button className="text-sm font-bold p-2 rounded hover:bg-gray-200 w-full text-left border-b border-gray-300">
               AI-Powered Resume Building
             </button>
+            </Link>
             <button className="text-sm font-bold p-2 rounded hover:bg-gray-200 w-full text-left border-b border-gray-300">
               Resume Optimization
             </button>
