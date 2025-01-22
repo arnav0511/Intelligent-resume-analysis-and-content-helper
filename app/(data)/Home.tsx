@@ -1,29 +1,57 @@
+"use client"
 import React from "react";
 import Navbar from "../_components/Navbar";
+import { Typewriter } from "react-simple-typewriter";
 
 function Home() {
   return (
     <div className="flex flex-col min-h-screen">
       <Navbar />
-      {/* Hero section */}
-      <div
-        className="hero min-h-screen bg-cover bg-no-repeat"
-        style={{
-          backgroundImage:
-            'url("https://img.daisyui.com/images/stock/photo-1507358522600-9f71e620c44e.webp")',
-        }}
-      >
-        <div className="hero-overlay bg-opacity-60"></div>
-        <div className="hero-content text-center text-neutral-content">
-          <div className="max-w-md mx-auto">
-            <h1 className="mb-5 text-5xl font-bold">Welcome to Your Professional Growth Companion</h1>
-            <p className="mb-5 text-justified">
-              Unlock your true potential with tools designed to empower your career. From crafting standout resumes to enhancing your professional presence, we’re here to help you achieve your goals effortlessly and effectively
+
+      <div className="hero min-h-screen relative overflow-hidden">
+        {/* Background Video */}
+        <video
+          className="absolute top-0 left-0 w-full h-full object-cover"
+          src="/videos/video.mp4" // Ensure this path is correct and the video is in the public/videos folder
+          autoPlay
+          loop
+          muted
+          playsInline
+        ></video>
+
+        {/* Overlay */}
+        <div className="hero-overlay bg-opacity-60 absolute top-0 left-0 w-full h-full bg-black"></div>
+
+        {/* Content */}
+        <div className="hero-content text-center text-neutral-content relative z-10">
+          <div className="max-w-3xl mx-auto">
+            {/* Heading with Typewriter Effect */}
+            <h1 className="mb-5 text-7xl font-bold text-white">
+              <Typewriter
+                words={["Welcome to Your Professional Growth Companion"]}
+                loop={false}
+                cursor
+                cursorStyle="|"
+                typeSpeed={150}
+                deleteSpeed={50}
+                delaySpeed={1000}
+              />
+            </h1>
+
+            {/* Description */}
+            <p className="mb-5 text-lg text-justify text-gray-300">
+              Unlock your true potential with tools designed to empower your
+              career. From crafting standout resumes to enhancing your
+              professional presence, we’re here to help you achieve your goals
+              effortlessly and effectively.
             </p>
+
+            {/* Button */}
             <button className="btn btn-info">Get Started</button>
           </div>
         </div>
       </div>
+
       <br /><br />
       <div className="hero bg-white min-h-screen">
         <div className="hero-content text-center">
@@ -118,11 +146,11 @@ function Home() {
                         Step 4
                       </time>
                       <div className="text-lg font-bold text-gray-800">
-                        User-Friendly Interface
+                        LinkedIn Optimization Suggestions
                       </div>
                       <p className="text-gray-600 ">
-                        Navigate seamlessly with an intuitive interface designed
-                        to simplify the resume-building process for everyone.
+                        Upload your LinkeIn profile, and we'll provide actionable
+                        insights to optimise it for your better reach in the network.
                       </p>
                     </div>
                   </li>
@@ -134,11 +162,11 @@ function Home() {
                         Step 5
                       </time>
                       <div className="text-lg font-bold text-gray-800">
-                        Secure and Private
+                        AI-Powered Interviews
                       </div>
                       <p className="text-gray-600 ">
-                        Your data is encrypted and securely stored, ensuring
-                        your privacy at every step of the process.
+                        Practice and master the questions your interviewer might ask
+                        in your upcoming interviews with the AI-Interviewer
                       </p>
                     </div>
                   </li>
@@ -204,6 +232,7 @@ function Home() {
         </div>
       </div>
 
+      
       {/* Footer section */}
       <footer className="footer bg-base-200 text-base-content p-10">
         <nav>
