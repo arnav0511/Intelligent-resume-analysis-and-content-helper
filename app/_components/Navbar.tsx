@@ -69,7 +69,7 @@ export default function Navbar() {
           <li>
             <details>
               <summary>Learn More</summary>
-              <ul className="p-2 h-52 overflow-y-auto rounded-none">
+              <ul className="p-2 h-52 overflow-y-auto rounded-none z-10">
                 <li>
                   <a>Resume Builder</a>
                 </li>

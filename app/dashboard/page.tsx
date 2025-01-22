@@ -1,9 +1,10 @@
 import React from 'react'
+import SideNav from '../_components/SideNav'
 
 function dashboard() {
   return (
     <div>
-      dashboard
+      <SideNav/>
     </div>
   )
 }

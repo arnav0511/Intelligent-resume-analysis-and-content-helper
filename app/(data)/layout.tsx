@@ -7,8 +7,8 @@ function layout({
   }>) {
   return (
     <div>
-        <div>
           <Navbar />
+        <div>
           {children}
         </div>
     </div>
