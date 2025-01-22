@@ -43,18 +43,22 @@ function SideNav() {
               AI-Powered Resume Building
             </button>
             </Link>
-            <button className="text-sm font-bold p-2 rounded hover:bg-gray-200 w-full text-left border-b border-gray-300">
+            <Link href="/dashboard/resume-optimizer"><button className="text-sm font-bold p-2 rounded hover:bg-gray-200 w-full text-left border-b border-gray-300">
               Resume Optimization
             </button>
-            <button className="text-sm font-bold p-2 rounded hover:bg-gray-200 w-full text-left border-b border-gray-300">
+            </Link>
+            <Link href="/dashboard/caption-generator"><button className="text-sm font-bold p-2 rounded hover:bg-gray-200 w-full text-left border-b border-gray-300">
               LinkedIn Content Creation
             </button>
-            <button className="text-sm font-bold p-2 rounded hover:bg-gray-200 w-full text-left border-b border-gray-300">
+            </Link>
+            <Link href="/dashboard/linkedin-optimizer"><button className="text-sm font-bold p-2 rounded hover:bg-gray-200 w-full text-left border-b border-gray-300">
               LinkedIn Profile Optimization
             </button>
-            <button className="text-sm font-bold p-2 rounded hover:bg-gray-200 w-full text-left">
+            </Link>
+            <Link href="/dashboard/AI-Interview"><button className="text-sm font-bold p-2 rounded hover:bg-gray-200 w-full text-left">
               AI-Powered Interviews
             </button>
+            </Link>
           </div>
         )}
       </div>
