@@ -9,7 +9,6 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@clerk/nextjs": "^6.9.6",
     "@google/generative-ai": "^0.21.0",
     "@radix-ui/react-slot": "^1.1.1",
     "@xoxoharsh/multiparser": "^1.0.0",
