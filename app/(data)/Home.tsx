@@ -1,6 +1,6 @@
 "use client"
 import React from "react";
-import Navbar from "../_components/Navbar";
+import Navbar from "../_components/Navbar/Navbar";
 import { Typewriter } from "react-simple-typewriter";
 
 function Home() {
