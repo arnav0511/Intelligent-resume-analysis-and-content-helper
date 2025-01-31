@@ -15,10 +15,10 @@ function Page() {
       {/* Side Navigation */}
       <SideNav />
 
-      <div className="p-5 flex-1">
+      <div className="p-20 flex-col w-full">
         {/* Dashboard Header */}
         <h1 className="text-4xl font-extrabold text-gray-800 mb-4">Dashboard</h1>
-        <p className="text-lg text-gray-600 mb-8">
+        <p className="text-lg text-gray-600 mb-20">
           Welcome! Explore our tools to optimize your profile, enhance your resume, and boost your career.
         </p>
 

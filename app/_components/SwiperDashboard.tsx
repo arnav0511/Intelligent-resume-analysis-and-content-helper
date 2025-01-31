@@ -15,7 +15,7 @@ const features = [
       "Upload your resume to get ATS-friendly optimization tips tailored to your desired job role.",
     actionText: "Optimize Resume",
     icon: <FileText className="w-8 h-8 text-blue-600" />,
-    action: "/Dashboard/ResumeOptimizer",
+    action: "/dashboard/ResumeOptimizer",
   },
   {
     title: "LinkedIn Caption Generator",
@@ -23,7 +23,7 @@ const features = [
       "Generate professional LinkedIn captions from your informal inputs to enhance your profile engagement.",
     actionText: "Generate Caption",
     icon: <Linkedin className="w-8 h-8 text-blue-600" />,
-    action: "/Dashboard/Caption",
+    action: "/dashboard/Caption",
   },
   {
     title: "LinkedIn Profile Optimization",
@@ -31,7 +31,7 @@ const features = [
       "Upload your LinkedIn profile to receive actionable tips for improving visibility and appeal.",
     actionText: "Optimize Profile",
     icon: <UserCheck className="w-8 h-8 text-blue-600" />,
-    action: "/Dashboard/Optimize-Profile",
+    action: "/dashboard/Optimize-Profile",
   },
   {
     title: "Generate New Resume",
@@ -39,7 +39,7 @@ const features = [
       "Create a professional resume from scratch by entering your details step by step.",
     actionText: "Create Resume",
     icon: <Briefcase className="w-8 h-8 text-blue-600" />,
-    action: "/Dashboard/Create-Resume",
+    action: "/dashboard/Create-Resume",
   },
   {
     title: "AI Interviewer",
@@ -47,7 +47,7 @@ const features = [
       "Practice job interviews with an AI interviewer and get instant feedback.",
     actionText: "Start Interview",
     icon: <Bot className="w-8 h-8 text-blue-600" />,
-    action: "/Dashboard/Start_Interview",
+    action: "/dashboard/Start_Interview",
   },
 ];
 
@@ -60,7 +60,7 @@ export default function SwiperDashboard() {
       className="mySwiper max-w-md mx-auto"
     >
       {features.map((feature) => (
-        <SwiperSlide key={feature.title} className="flex justify-center">
+        <SwiperSlide key={feature.title} className="flex justify-center ">
           <Dashboard_Card
             icon={feature.icon}
             title={feature.title}

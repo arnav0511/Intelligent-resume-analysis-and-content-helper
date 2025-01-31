@@ -1,7 +1,7 @@
 'use client'
-import ATS from "@/app/_components/ATS";
-import Caption from "@/app/_components/Caption";
-import Optimizer from "@/app/_components/Optimiser";
+import ATS from "@/app/_components/Forms/Resume_optimization";
+import Caption from "@/app/_components/Forms/Caption_Genrator";
+import Optimizer from "@/app/_components/Forms/LinkedIn_Optimization";
 import { useParams } from "next/navigation";
 import React from "react";
 
@@ -11,13 +11,13 @@ function Page() {
   // Conditionally render components based on the slug
   let Component;
   switch (slugs) {
-    case "resume-optimizer":
+    case "ResumeOptimizer":
       Component = <ATS />;
       break;
-    case "caption-generator":
+    case "Caption":
       Component = <Caption />;
       break;
-    case "linkedin-optimizer":
+    case "Optimize-Profile":
       Component = <Optimizer />;
       break;
     default:

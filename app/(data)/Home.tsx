@@ -1,24 +1,27 @@
-"use client"
+"use client";
 import React from "react";
 import Navbar from "../_components/Navbar/Navbar";
 import { Typewriter } from "react-simple-typewriter";
+import Atropos from "atropos/react";
+import "atropos/css";
+import InfiniteTextLoop from "../_components/InfiniteTextLoop";
 
 function Home() {
   return (
     <div className="flex flex-col min-h-screen">
       <Navbar />
 
-      <div className="hero min-h-screen relative overflow-hidden">
+      <div className="hero min-h-screen relative overflow-hidden w-[95dvw] mx-auto rounded-3xl ">
         {/* Background Video */}
+
         <video
           className="absolute top-0 left-0 w-full h-full object-cover"
-          src="/videos/video.mp4" // Ensure this path is correct and the video is in the public/videos folder
+          src="/videos/video.mp4"
           autoPlay
           loop
           muted
           playsInline
-        ></video>
-
+        />
         {/* Overlay */}
         <div className="hero-overlay bg-opacity-60 absolute top-0 left-0 w-full h-full bg-black"></div>
 
@@ -52,7 +55,13 @@ function Home() {
         </div>
       </div>
 
-      <br /><br />
+      <br/>
+      
+      <div className="text-center">
+      <InfiniteTextLoop />
+      </div>
+
+      <br />
       <div className="hero bg-white min-h-screen">
         <div className="hero-content text-center">
           <div className="max-w-4xl">
@@ -69,9 +78,10 @@ function Home() {
               cutting-edge tools built just for you.
             </p>
 
+
             <div className="max-w-4xl mx-auto my-10">
-              <h1 className="text-4xl font-extrabold text-center text-gray-800 mb-4">
-                Revolutionizing Resume Building
+              <h1 className="text-3xl font-extrabold text-center text-gray-800 mb-4">
+                Revolutionizing Resume Building & LinkedIn 
               </h1>
               <p className="text-lg text-gray-600 text-justify leading-relaxed">
                 Our application is designed to simplify resume creation and
@@ -149,8 +159,9 @@ function Home() {
                         LinkedIn Optimization Suggestions
                       </div>
                       <p className="text-gray-600 ">
-                        Upload your LinkeIn profile, and we'll provide actionable
-                        insights to optimise it for your better reach in the network.
+                        Upload your LinkeIn profile, and we'll provide
+                        actionable insights to optimise it for your better reach
+                        in the network.
                       </p>
                     </div>
                   </li>
@@ -165,8 +176,8 @@ function Home() {
                         AI-Powered Interviews
                       </div>
                       <p className="text-gray-600 ">
-                        Practice and master the questions your interviewer might ask
-                        in your upcoming interviews with the AI-Interviewer
+                        Practice and master the questions your interviewer might
+                        ask in your upcoming interviews with the AI-Interviewer
                       </p>
                     </div>
                   </li>
@@ -178,61 +189,52 @@ function Home() {
       </div>
 
       {/* Card section */}
-      <div className="flex flex-wrap md:flex-nowrap gap-6  m-10">
-        <div className="card bg-warning  w-96">
-          <div className="card-body">
-            <h2 className="card-title">Resume Builder</h2>
-            <p>Create professional resumes in minutes.</p>
-            <div className="card-actions justify-end">
-              <button className="btn glass">Learn More</button>
+      <div className="flex flex-wrap  gap-6 justify-center items-center min-h-screen m-10">
+        {[
+          {
+            title: "Resume Builder",
+            desc: "Create professional resumes in minutes.",
+            bg: "bg-warning",
+          },
+          {
+            title: "Resume Optimization",
+            desc: "Optimize your resume for ATS and recruiters.",
+            bg: "bg-error text-secondary-content",
+          },
+          {
+            title: "Content Creator for LinkedIn",
+            desc: "Generate engaging content for your LinkedIn profile.",
+            bg: "bg-success text-accent-content",
+          },
+          {
+            title: "LinkedIn Profile Optimization",
+            desc: "Optimize your LinkedIn profile for maximum visibility.",
+            bg: "bg-neutral text-neutral-content",
+          },
+          {
+            title: "AI Interviewer",
+            desc: "Practice your interview skills with AI.",
+            bg: "bg-info text-info-content",
+          },
+        ].map((card, index) => (
+          <Atropos key={index} className="w-96"   highlight={false}>
+            <div
+              className={`card ${card.bg} w-96 shadow-lg rounded-xl transition-transform duration-300 ease-in-out h-48`}
+            >
+              <div className="card-body text-neutral-content">
+                <h2 className="card-title">{card.title}</h2>
+                <p>{card.desc}</p>
+                <div className="card-actions justify-end">
+                  <button className="btn glass text-neutral-content">
+                    Learn More
+                  </button>
+                </div>
+              </div>
             </div>
-          </div>
-        </div>
-        <div className="card bg-error text-secondary-content w-96">
-          <div className="card-body text-neutral-content">
-            <h2 className="card-title">Resume Optimization</h2>
-            <p>Optimize your resume for ATS and recruiters.</p>
-            <div className="card-actions justify-end">
-              <button className="btn glass text-neutral-content">
-                Learn More
-              </button>
-            </div>
-          </div>
-        </div>
-        <div className="card bg-success text-accent-content w-96">
-          <div className="card-body text-neutral-content">
-            <h2 className="card-title">Content Creator for LinkedIn</h2>
-            <p>Generate engaging content for your LinkedIn profile.</p>
-            <div className="card-actions justify-end">
-              <button className="btn glass text-neutral-content">
-                Learn More
-              </button>
-            </div>
-          </div>
-        </div>
-        <div className="card bg-neutral text-neutral-content w-96">
-          <div className="card-body">
-            <h2 className="card-title">LinkedIn Profile Optimization</h2>
-            <p>Optimize your LinkedIn profile for maximum visibility.</p>
-            <div className="card-actions justify-end">
-              <button className="btn glass">Learn More</button>
-            </div>
-          </div>
-        </div>
-        <div className="card bg-info text-info-content w-96">
-          <div className="card-body text-neutral-content">
-            <h2 className="card-title">AI Interviewer</h2>
-            <p>Practice your interview skills with AI.</p>
-            <div className="card-actions justify-end">
-              <button className="btn glass text-neutral-content">
-                Learn More
-              </button>
-            </div>
-          </div>
-        </div>
+          </Atropos>
+        ))}
       </div>
 
-      
       {/* Footer section */}
       <footer className="footer bg-base-200 text-base-content p-10">
         <nav>

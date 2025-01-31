@@ -1,13 +1,20 @@
 "use server";
 import React from "react";
 import { currentUser } from "@clerk/nextjs/server";
+import { UserButton } from "@clerk/nextjs";
 import Image from "next/image";
 
 async function SideNav() {
   const user = await currentUser();
+  const userButtonAppearance = {
+    elements: {
+      userButtonAvatarBox: "w-24 h-24", 
+      userButtonPopoverCard: "bg-blue-100"
+    },
+  };
 
   return (
-    <div className=" w-60 border-r divide-y">
+    <div className=" w-72 border-r divide-y">
       <div className="flex justify-center my-5">
         <Image
           src={"/logo.svg"}
@@ -18,13 +25,12 @@ async function SideNav() {
         />
       </div>
       <div className="flex flex-col items-center py-5 ">
-        <Image
-          src={user?.imageUrl}
-          height={100}
-          width={100}
-          alt="Avatar"
-          className="border-4 border-blue-500 shadow-md rounded-full"
-        />
+        <div className="avatar">
+          <div className="ring-primary ring-offset-base-100 w-24 rounded-full ring ring-offset-2">
+            <UserButton appearance={userButtonAppearance} />
+          </div>
+        </div>
+        {/* <UserButton /> */}
         <h2 className="font-extrabold text-lg text-gray-800 mt-4 text-center">
           {user?.firstName} {user?.lastName || "User"}
         </h2>

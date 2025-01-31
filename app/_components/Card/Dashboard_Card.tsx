@@ -17,7 +17,7 @@ function Dashboard_Card({
   action,
 }: DashboardCardProps) {
   return (
-    <div className="group relative bg-white p-6 rounded-xl shadow-lg border border-gray-200 hover:shadow-2xl hover:border-blue-500 transition-transform transform hover:-translate-y-2 h-60 flex flex-col justify-between">
+    <div className="group relative bg-white p-6 rounded-xl shadow-lg border border-gray-200 hover:shadow-2xl hover:border-blue-500 transition-transform transform hover:-translate-y-2  flex flex-col justify-between h-72">
       <div className="absolute top-4 right-4 opacity-20 group-hover:opacity-100 transition-opacity">
         {icon}
       </div>
