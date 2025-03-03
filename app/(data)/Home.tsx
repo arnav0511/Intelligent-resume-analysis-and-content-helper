@@ -1,24 +1,47 @@
+<<<<<<< HEAD
 "use client"
 import React from "react";
 import Navbar from "../_components/Navbar";
 import { Typewriter } from "react-simple-typewriter";
+=======
+"use client";
+import React from "react";
+import Navbar from "../_components/Navbar/Navbar";
+import { Typewriter } from "react-simple-typewriter";
+import Atropos from "atropos/react";
+import "atropos/css";
+import InfiniteTextLoop from "../_components/InfiniteTextLoop";
+>>>>>>> 0ec330c (mid evaluation update)
 
 function Home() {
   return (
     <div className="flex flex-col min-h-screen">
       <Navbar />
 
+<<<<<<< HEAD
       <div className="hero min-h-screen relative overflow-hidden">
         {/* Background Video */}
         <video
           className="absolute top-0 left-0 w-full h-full object-cover"
           src="/videos/video.mp4" // Ensure this path is correct and the video is in the public/videos folder
+=======
+      <div className="hero min-h-screen relative overflow-hidden w-[95dvw] mx-auto rounded-3xl ">
+        {/* Background Video */}
+
+        <video
+          className="absolute top-0 left-0 w-full h-full object-cover"
+          src="/videos/video.mp4"
+>>>>>>> 0ec330c (mid evaluation update)
           autoPlay
           loop
           muted
           playsInline
+<<<<<<< HEAD
         ></video>
 
+=======
+        />
+>>>>>>> 0ec330c (mid evaluation update)
         {/* Overlay */}
         <div className="hero-overlay bg-opacity-60 absolute top-0 left-0 w-full h-full bg-black"></div>
 
@@ -52,7 +75,17 @@ function Home() {
         </div>
       </div>
 
+<<<<<<< HEAD
       <br /><br />
+=======
+      <br/>
+      
+      <div className="text-center">
+      <InfiniteTextLoop />
+      </div>
+
+      <br />
+>>>>>>> 0ec330c (mid evaluation update)
       <div className="hero bg-white min-h-screen">
         <div className="hero-content text-center">
           <div className="max-w-4xl">
@@ -69,9 +102,16 @@ function Home() {
               cutting-edge tools built just for you.
             </p>
 
+<<<<<<< HEAD
             <div className="max-w-4xl mx-auto my-10">
               <h1 className="text-4xl font-extrabold text-center text-gray-800 mb-4">
                 Revolutionizing Resume Building
+=======
+
+            <div className="max-w-4xl mx-auto my-10">
+              <h1 className="text-3xl font-extrabold text-center text-gray-800 mb-4">
+                Revolutionizing Resume Building & LinkedIn 
+>>>>>>> 0ec330c (mid evaluation update)
               </h1>
               <p className="text-lg text-gray-600 text-justify leading-relaxed">
                 Our application is designed to simplify resume creation and
@@ -149,8 +189,14 @@ function Home() {
                         LinkedIn Optimization Suggestions
                       </div>
                       <p className="text-gray-600 ">
+<<<<<<< HEAD
                         Upload your LinkeIn profile, and we'll provide actionable
                         insights to optimise it for your better reach in the network.
+=======
+                        Upload your LinkeIn profile, and we'll provide
+                        actionable insights to optimise it for your better reach
+                        in the network.
+>>>>>>> 0ec330c (mid evaluation update)
                       </p>
                     </div>
                   </li>
@@ -165,8 +211,13 @@ function Home() {
                         AI-Powered Interviews
                       </div>
                       <p className="text-gray-600 ">
+<<<<<<< HEAD
                         Practice and master the questions your interviewer might ask
                         in your upcoming interviews with the AI-Interviewer
+=======
+                        Practice and master the questions your interviewer might
+                        ask in your upcoming interviews with the AI-Interviewer
+>>>>>>> 0ec330c (mid evaluation update)
                       </p>
                     </div>
                   </li>
@@ -178,6 +229,7 @@ function Home() {
       </div>
 
       {/* Card section */}
+<<<<<<< HEAD
       <div className="flex flex-wrap md:flex-nowrap gap-6  m-10">
         <div className="card bg-warning  w-96">
           <div className="card-body">
@@ -233,6 +285,54 @@ function Home() {
       </div>
 
       
+=======
+      <div className="flex flex-wrap  gap-6 justify-center items-center min-h-screen m-10">
+        {[
+          {
+            title: "Resume Builder",
+            desc: "Create professional resumes in minutes.",
+            bg: "bg-warning",
+          },
+          {
+            title: "Resume Optimization",
+            desc: "Optimize your resume for ATS and recruiters.",
+            bg: "bg-error text-secondary-content",
+          },
+          {
+            title: "Content Creator for LinkedIn",
+            desc: "Generate engaging content for your LinkedIn profile.",
+            bg: "bg-success text-accent-content",
+          },
+          {
+            title: "LinkedIn Profile Optimization",
+            desc: "Optimize your LinkedIn profile for maximum visibility.",
+            bg: "bg-neutral text-neutral-content",
+          },
+          {
+            title: "AI Interviewer",
+            desc: "Practice your interview skills with AI.",
+            bg: "bg-info text-info-content",
+          },
+        ].map((card, index) => (
+          <Atropos key={index} className="w-96"   highlight={false}>
+            <div
+              className={`card ${card.bg} w-96 shadow-lg rounded-xl transition-transform duration-300 ease-in-out h-48`}
+            >
+              <div className="card-body text-neutral-content">
+                <h2 className="card-title">{card.title}</h2>
+                <p>{card.desc}</p>
+                <div className="card-actions justify-end">
+                  <button className="btn glass text-neutral-content">
+                    Learn More
+                  </button>
+                </div>
+              </div>
+            </div>
+          </Atropos>
+        ))}
+      </div>
+
+>>>>>>> 0ec330c (mid evaluation update)
       {/* Footer section */}
       <footer className="footer bg-base-200 text-base-content p-10">
         <nav>
