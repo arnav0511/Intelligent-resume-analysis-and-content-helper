@@ -19,19 +19,19 @@ An **AI-powered career assistance platform** designed to streamline the job appl
 ## 📸 Project Snapshots  
  
 ### Home Page
-![Home Page Screenshot]<img width="1366" height="3013" alt="Jobwhiz" src="https://github.com/user-attachments/assets/8086d5cd-6b04-4e37-9f97-512122df3695" />
+<img width="1366" height="3013" alt="Jobwhiz" src="https://github.com/user-attachments/assets/8086d5cd-6b04-4e37-9f97-512122df3695" />
 
 
 ###  Dashboard
-![Dashboard Screenshot]<img width="2589" height="1289" alt="image" src="https://github.com/user-attachments/assets/e2427543-6770-4275-b3ad-78b28ff04e53" />
+<img width="2589" height="1289" alt="image" src="https://github.com/user-attachments/assets/e2427543-6770-4275-b3ad-78b28ff04e53" />
 
 
 ### 🔑 Login & Authentication  
-![Authentication Screenshot]<img width="1143" height="1268" alt="image" src="https://github.com/user-attachments/assets/9ab3acd3-8e90-450e-95c3-acac8e8d903c" />
+<img width="1143" height="1268" alt="image" src="https://github.com/user-attachments/assets/9ab3acd3-8e90-450e-95c3-acac8e8d903c" />
 
 
 ### 📝 Resume Builder  
-![Resume Builder Screenshot]<img width="1543" height="1370" alt="image" src="https://github.com/user-attachments/assets/e1b91a41-d7fe-4002-a27c-04bbce5711b1" />
+<img width="1543" height="1370" alt="image" src="https://github.com/user-attachments/assets/e1b91a41-d7fe-4002-a27c-04bbce5711b1" />
  
 
 ### 📄 Resume Optimizer  
@@ -39,13 +39,13 @@ An **AI-powered career assistance platform** designed to streamline the job appl
  
 
 ### 💼 LinkedIn Tools  
-![LinkedIn Tools Screenshot]<img width="1475" height="1282" alt="image" src="https://github.com/user-attachments/assets/8729e7cb-5eeb-40a1-923c-1e1d43d8053f" />
+<img width="1475" height="1282" alt="image" src="https://github.com/user-attachments/assets/8729e7cb-5eeb-40a1-923c-1e1d43d8053f" />
 
 <img width="1375" height="1252" alt="image" src="https://github.com/user-attachments/assets/884f89d3-9dff-429c-874b-a196fcf9b3a4" />
 
 
 ### 🎯 AI Interviewer  
-![AI Interviewer Screenshot]<img width="2519" height="1364" alt="image" src="https://github.com/user-attachments/assets/efdd1015-f885-4eaf-9df2-d4d065df364b" />
+<img width="2519" height="1364" alt="image" src="https://github.com/user-attachments/assets/efdd1015-f885-4eaf-9df2-d4d065df364b" />
   
 <img width="2527" height="1368" alt="image" src="https://github.com/user-attachments/assets/2fc34c86-33bb-4adb-a847-d3c85434c716" />
 
